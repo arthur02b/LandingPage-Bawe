@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transportadora especializada em rastreamento em tempo real e segurança de mercadorias.">
+    <title>BAWE Express – Segurança e Tecnologia em Movimento</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="LogoBawe.png" alt="BAWE Express Logo" style="height: 250px;">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#services" onclick="showServices()">Serviços</a></li>
+                <li><a href="#tracking">Rastreamento</a></li>
+                <li><a href="#testimonials">Depoimentos</a></li>
+                <li><a href="#contact" onclick="openWhatsApp()">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h2>Segurança e Tecnologia em Movimento</h2>
+            <p>Rastreamento em tempo real e segurança avançada para sua mercadoria.</p>
+            <a href="#contact" class="cta-btn" onclick="openWhatsApp()">Entre em Contato</a>
+        </div>
+    </header>
+   
+    <main class="container">
+        <section class="section" id="services">
+            <h2>Por Que Escolher a BAWE?</h2>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Rastreamento em Tempo Real</h3>
+                    <p>Acompanhe sua carga em cada etapa da jornada.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-lock"></i>
+                    <h3>Segurança Garantida</h3>
+                    <p>Monitoramento 24/7 e equipe especializada.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <h3>Equipe Profissional</h3>
+                    <p>Serviço de excelência em todos os níveis.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-globe"></i>
+                    <h3>Cobertura Nacional</h3>
+                    <p>Estamos em todo o Brasil para atender suas necessidades.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section testimonials" id="testimonials">
+            <h2>O Que Nossos Clientes Dizem</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"A BAWE transformou a maneira como gerenciamos nossas entregas. O rastreamento em tempo real é incrível!"</p>
+                    <footer>- João da Silva</footer>
+                </div>
+                <div class="testimonial">
+                    <p>"Sinto-me seguro com a BAWE. Eles cuidam da minha carga como se fosse deles!"</p>
+                    <footer>- Maria Oliveira</footer>
+                </div>
+                <div class="testimonial">
+                    <p>"Excelentes profissionais! Sempre disponíveis para tirar dúvidas e ajudar."</p>
+                    <footer>- Carlos Mendes</footer>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <h2>Entre em Contato</h2>
+            <div class="contact-form">
+                
+
+                <form id="contactForm">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" required>
+
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" required>
+
+                    <button type="submit">Enviar</button>
+                </form>
+                <p id="message" class="message"></p>
+                <br><br>
+                <p>Você também pode entrar em contato conosco através do WhatsApp!</p>
+                <button onclick="openWhatsApp()">Fale conosco pelo WhatsApp</button>
+                <br><br>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BAWE Transportes. Todos os direitos reservados.</p>
+        <p class="creators">.</p>
+    </footer>
+
+</body>
+</html>
