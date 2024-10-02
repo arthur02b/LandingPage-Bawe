@@ -6,6 +6,14 @@ function showServices() {
     document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
 }
 
+function acessar(){
+
+    window.location.href = 'https://forms.gle/DFJ13DtiharFmUbZ9';
+    return false;
+
+
+}
+
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); 
 
