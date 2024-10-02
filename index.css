@@ -178,6 +178,7 @@ body {
     background-color: var(--light-color);
     padding: 20px;
     box-shadow: 0 0 10px #247cf4(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .contact-form input, .contact-form textarea {
@@ -200,7 +201,7 @@ body {
 }
 
 .contact-form button:hover {
-    background-color: #004a7a;
+    background-color: #247cf4;
 }
 
 footer {
